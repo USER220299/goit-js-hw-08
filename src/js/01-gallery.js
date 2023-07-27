@@ -8,7 +8,7 @@ console.log(galleryItems);
 const gallery = document.querySelector('.gallery');
 
 const galleryImage = createElementOfGallery(galleryItems);
-galleryImage.style.text-decoration ;
+// galleryItems.style.listStyle = "none" ;
 gallery.insertAdjacentHTML('afterbegin', galleryImage);
 
 
