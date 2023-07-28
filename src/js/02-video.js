@@ -1,8 +1,6 @@
-import Player from "@vimeo/player";
 
-const iframe = document.querySelector('iframe');
-const player = new Vimeo.Player(iframe);
 
-player.on('play', function() {
-        console.log('played the video!');
- });
+const qwe = "asdf"
+const name ="hello"
+
+localStorage.setItem(qwe, JSON.stringify(name));
