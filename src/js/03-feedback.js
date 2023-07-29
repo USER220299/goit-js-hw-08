@@ -16,13 +16,13 @@ function onFormSubmit(event) {
     event.target.reset();
 
     console.log(JSON.parse(localStorage.getItem(key)));
-      localStorage.removeItem(key);
+    localStorage.removeItem(key);
 }
 
 function onFormInput(event) {
-     event.preventDefault();
-  value[event.target.name] = event.target.value;
-   localStorage.setItem(key, JSON.stringify(value));
+    event.preventDefault();
+    value[event.target.name] = event.target.value;
+    localStorage.setItem(key, JSON.stringify(value));
 
 }
 
@@ -30,8 +30,8 @@ function populalForm() {
     const saveValue = JSON.parse(localStorage.getItem(key));
     if (saveValue) {
         let { email, message } = form.elements;
-        email.value = saveValue.email;
-        message.value = saveValue.message;
+        email.value = saveValue.email || " ";
+        message.value = saveValue.message || " ";
         
     }
 
