@@ -28,7 +28,7 @@ function onFormInput(event) {
 }
 
 function populalForm() {
-    const saveValue = JSON.parse(localStorage.getItem(key))||{};
+    const saveValue = JSON.parse(localStorage.getItem(key));
     if (saveValue) {
         let { email, message } = form.elements;
         email.value = saveValue.email || " ";
